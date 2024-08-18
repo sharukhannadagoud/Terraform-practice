@@ -1,41 +1,23 @@
-**Terraform Practice Repository**
+# Secure Container Apps with Application Gateway and HTTPS
 
-**📝 Overview**
-This repository contains practice Terraform code designed to help you learn and experiment with Infrastructure as Code (IaC) principles. The examples included cover a variety of Terraform features, cloud providers, and best practices, making this a comprehensive resource for both beginners and advanced users.
+This demonstration shows how to secure access to Container Apps using Azure Application Gateway and TLS certificate saved in Key vault for HTTPS.
 
-**📂 Contents**
-Basic Setup: Initial configuration and setup to get started with Terraform.
-AWS Examples: Code for creating and managing resources in AWS.
-Azure Examples: Code for creating and managing resources in Microsoft Azure.
-GCP Examples: Code for creating and managing resources in Google Cloud Platform (GCP).
-Modules: Examples demonstrating how to create and use reusable modules.
-State Management: Best practices for implementing state management and using remote backends.
-CI/CD Integration: Guidance on integrating Terraform with CI/CD pipelines for automated deployments.
+![image](https://github.com/user-attachments/assets/09779e01-07a4-44ca-90ea-5547da3cdb58)
 
-**🚀 Getting Started**
-To get started with this repository, follow these steps:
 
-**Clone the repository:**
+To deploy this architecture using terraform:
 
-git clone https://github.com/yourusername/terraform-practice.git
-cd terraform-practice
+```
+terraform init
+terraform plan -out tfplan
+terraform apply tfplan
+```
 
-**Install Terraform:**
+The following resources will be created:
 
-Follow the official Terraform installation guide to install Terraform on your machine.
-**Initialize Terraform:**
+![image](https://github.com/user-attachments/assets/f8cac906-6708-4680-a074-8351d17db595)
 
-1. terraform init
 
-**💻 Usage**
-Navigate to the desired example directory:
-cd examples/aws/basic-setup
-Update the variables.tf file with your specific configuration.
+In addition to an Internal (private) Load Balancer:
 
-**Preview the changes Terraform will make:**
-
-2. terraform plan
-
-**Apply the changes to your infrastructure:**
-
-3. terraform apply
+![image](https://github.com/user-attachments/assets/b0ab4c7a-f985-4ad3-9d1b-0149af4870ea)
