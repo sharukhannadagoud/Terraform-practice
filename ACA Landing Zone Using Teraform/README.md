@@ -1,6 +1,8 @@
 # Azure Container Apps - Internal environment secure baseline [Terraform]
 
 This is the Terraform-based deployment guide for [Scenario 1: Azure Container Apps - Internal environment secure baseline](../README.md).
+![image](https://github.com/user-attachments/assets/0bc6d649-5b82-4365-9730-ba3036d3dfd1)
+
 
 ## Prerequisites 
 
